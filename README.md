@@ -1,4 +1,6 @@
-[🌐 **Portfolio Site** → parksungyun0411.github.io](https://parksungyun0411.github.io) · 더 자세한 프로젝트·경력은 포트폴리오 페이지에서 보실 수 있습니다.
+[🌐 **Portfolio Site** → parksungyun0411.github.io](https://parksungyun0411.github.io) · [✍️ **Velog** → velog.io/@parksungyun0411](https://velog.io/@parksungyun0411)
+
+더 자세한 프로젝트·경력은 포트폴리오 페이지에서 보실 수 있습니다.
 
 ---
 
@@ -59,4 +61,6 @@ AWS·Azure 운영, EC2 / Microsoft 365 / IDMS 운영 지원, 공공 메신저 **
 
 ## 📫 Contact
 
-- Email: dacon@dacon.io
+- Email: psyreo93@gmail.com · psyreo@naver.com · sy.park@dacon.io (work)
+- Velog: [@parksungyun0411](https://velog.io/@parksungyun0411)
+- Portfolio: [parksungyun0411.github.io](https://parksungyun0411.github.io)
