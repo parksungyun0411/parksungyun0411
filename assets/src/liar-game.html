@@ -1,7 +1,7 @@
 <meta charset="utf-8"><style>*{box-sizing:border-box;margin:0}body{width:1200px;height:630px;background:#F8FAFC;font-family:"Apple SD Gothic Neo","Helvetica Neue",sans-serif;color:#0F172A;padding:56px 64px;display:flex;flex-direction:column}h1{font-size:34px;font-weight:700}p.sub{font-size:21px;color:#475569;margin-top:8px}.f{margin-top:auto;font-size:17px;color:#64748B}
 .row{display:flex;gap:28px;margin-top:34px;align-items:stretch}.bx{border:2px solid #CBD5E1;background:#fff;border-radius:10px;padding:18px 22px;font-size:21px;line-height:1.5}.bx b{display:block;font-size:23px;margin-bottom:4px}.a{align-self:center;font-size:34px;color:#64748B}.s{border-color:#7C3AED}
 </style><h1>라이어 게임 · 서버 스레드 구조</h1><p class="sub">Java Socket(TCP) · 최대 8인 접속 · 접속 처리와 게임 진행 분리</p>
-<div class="row"><div class="bx" style="width:250px"><b>Client (Swing)</b>수신 스레드<br>writeUTF 텍스트 프로토콜</div><div class="a">⇄</div>
+<div class="row"><div class="bx" style="width:290px"><b>Client (Swing)</b>수신 스레드<br>writeUTF 텍스트 프로토콜</div><div class="a">⇄</div>
 <div class="bx s" style="flex:1"><b>LiarServer</b>serverThread: accept 루프<br>→ 접속마다 OneClientModul 스레드 생성 (최대 8)<br>gameThread: 시작 버튼 → GameManager 구동</div></div>
 <div class="row"><div class="bx" style="flex:1"><b>메시지 분기</b>접두사로 구분해 접속자 전원에게 브로드캐스트</div><div class="bx" style="flex:1"><b>게임 흐름</b>설명 10초 → 투표 20초 → 라이어 제시어 추리 10초</div></div>
 <div class="f">출처: liar-game README · 담당: 서버 멀티스레드 처리, 게임 로직</div>
