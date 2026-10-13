@@ -1,64 +1,142 @@
-# 👋 박성윤 · Park Sungyun
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:2563EB&height=180&section=header&text=Park%20Sungyun&fontSize=60&fontColor=ffffff&animation=fadeIn)
 
-> **데이터와 AI로 사용자의 본질적인 문제를 찾아 해결하는 엔지니어 — 기획부터 구현·QA·배포까지**
-> Data / AI Backend Engineer
+<div align="center">
 
-- 현재 **데이콘**에서 AI 해커톤 플랫폼의 평가 시스템을 기획·설계부터 구현·테스트·배포까지 직접 수행하고, 플랫폼 전반의 QA·자동화를 담당합니다.
-- 관심 도메인: Graph-RAG / LLM 백엔드 · 평가·품질 자동화 · 기획→구현→검증을 한 사람이 잇는 개발
-- 🎓 건국대학교 스마트ICT융합공학과 (응용통계학과 다전공)
+### 데이터가 들어와서 쓰이기까지의 길을 만들고, 그 길이 어디서 끊기는지 먼저 찾는 엔지니어입니다.
 
----
+<a href="https://parksungyun0411.github.io"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-parksungyun0411.github.io-2563EB?style=for-the-badge"></a>
 
-## 🚀 Featured Projects
+<a href="mailto:psyreo@naver.com"><img alt="Email" src="https://img.shields.io/badge/Email-psyreo%40naver.com-5B6770"></a>
+<a href="https://parksungyun0411.github.io/cv/"><img alt="CV" src="https://img.shields.io/badge/CV-parksungyun0411.github.io%2Fcv-0F766E"></a>
 
-### 🎓 [jeju-emotion-analysis](https://github.com/parksungyun0411/jeju-emotion-analysis) · 졸업 프로젝트
-제주어/표준어 병렬 데이터 기반 7감정 분류 NLP. 고전 ML 베이스라인(F1-Macro ~0.30)으로 한계를 규명한 뒤,
-KR-BERT·KoELECTRA 기반 딥러닝 7단계 파이프라인(Dual-Gated 인코더 · DAPT · 앙상블)으로 **F1-Macro 0.84** 달성.
+</div>
 
-### 🎮 [liar-game](https://github.com/parksungyun0411/liar-game) · 네트워크 프로그래밍 팀 프로젝트
-Java Socket(TCP) + Swing 기반 8인 멀티플레이어 라이어 게임 (3인 팀). 서버 측 멀티스레드 처리와 게임 로직 담당.
+> [!NOTE]
+> 전체 프로젝트의 배경·접근·결과와 기술 노트는 [**포트폴리오 사이트**](https://parksungyun0411.github.io)에 정리되어 있습니다.
 
-### 📚 [university-coursework](https://github.com/parksungyun0411/university-coursework) · 학부 4년 코드 모음
-2020~2025 학기별 과제·실습 코드 (C, Java, Python, R, C++) — 자료구조 · 알고리즘 · DB · 시스템 · 통계.
+## 🚀 대표 프로젝트
 
----
+실무에서 맡은 일과, 실무에서 생긴 질문을 공개 데이터로 끝까지 확인한 개인 프로젝트입니다. 설계 판단과 검증 과정은 각 저장소와 사이트의 프로젝트 상세에 있습니다.
 
-## 🛠 Tech Stack
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://parksungyun0411.github.io/projects/driver-risk-platform/"><img src="assets/driver-risk-platform.svg" alt="교통사고 위험 예측 AI 플랫폼"></a>
+      <h3><a href="https://parksungyun0411.github.io/projects/driver-risk-platform/">공공기관 납품 교통사고 위험 예측 AI 플랫폼</a></h3>
+      운수종사자의 검사 결과와 사고 이력으로 개인별 사고 위험도를 산출하고 SHAP으로 요인을 설명하는 납품 플랫폼입니다.<br>경진대회로 확보한 모델을 앙상블로 탑재하고, 엑셀 전 시트 적재 구조와 망분리 PC용 오프라인 설치 체계를 만들어 발주기관 운영 환경에 배포했습니다.<br><br>
+      <a href="https://parksungyun0411.github.io/projects/driver-risk-platform/"><b>프로젝트 상세</b></a> · 발주기관 보안 조항에 따라 코드 비공개<br>
+      <sub>FastAPI · LightGBM · SHAP · React · eGovFrame · Nginx</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/parksungyun0411/rag-eval-harness"><img src="assets/rag-eval-harness-demo.png" alt="RAG 리더보드 순위 안정성 데모 화면"></a>
+      <h3><a href="https://github.com/parksungyun0411/rag-eval-harness">RAG 리더보드 순위 안정성</a></h3>
+      공개 한국어 RAG 리더보드의 순위가 질문 수에 따라 얼마나 흔들리는지 부트스트랩 10,000회로 재고, 시뮬레이션을 정확해로 검증했습니다.<br>300문항으로는 1위와 2위를 가를 수 없다는 결과와, 역전 확률·필요 질문 수를 계산하는 계산기를 공개했습니다.<br><br>
+      <a href="https://github.com/parksungyun0411/rag-eval-harness"><b>저장소</b></a> · <a href="https://parksungyun0411.github.io/notes/rag-leaderboard-rank-stability/">기술 노트</a><br>
+      <sub>Python · NumPy · SciPy · FastAPI · pytest</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/parksungyun0411/jeju-emotion-analysis"><img src="assets/jeju-pipeline.png" alt="제주어 감정 분류 7단계 파이프라인"></a>
+      <h3><a href="https://github.com/parksungyun0411/jeju-emotion-analysis">제주어 다중감정분류</a></h3>
+      감정 라벨이 없는 제주어에서 GPT-4o 라벨링과 직접 검수로 학습 데이터 127,324행을 만들고, 고전 ML의 한계(F1-Macro 0.30)를 먼저 확인했습니다.<br>같은 테스트셋 위에 KR-BERT 개선 단계를 쌓아 F1-Macro 0.84까지 올렸습니다. 재현 코드로 확인되는 범위는 저장소에 적었습니다.<br><br>
+      <a href="https://github.com/parksungyun0411/jeju-emotion-analysis"><b>저장소</b></a> · <a href="https://parksungyun0411.github.io/notes/jeju-emotion-stepwise/">기술 노트</a><br>
+      <sub>PyTorch · HuggingFace · KR-BERT · KoELECTRA</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/parksungyun0411/airgap-egress-audit"><img src="assets/airgap-egress-audit-arch.png" alt="폐쇄망 외부 호출 감사 구성"></a>
+      <h3><a href="https://github.com/parksungyun0411/airgap-egress-audit">폐쇄망 반입 후 외부 호출 감사</a></h3>
+      egress를 막은 쿠버네티스 네임스페이스에 한국어 소형 LLM과 RAG 스택을 설치하고, 설치·기동·첫 요청·유휴 단계의 외부 호출 시도를 패킷으로 기록했습니다.<br>허용 목록 밖 호출이 한 건이라도 있으면 실패하는 회귀 게이트로 6건 → 0건을 고정했습니다.<br><br>
+      <a href="https://github.com/parksungyun0411/airgap-egress-audit"><b>저장소</b></a><br>
+      <sub>Kubernetes (kind) · NetworkPolicy · tcpdump · llama.cpp · Qdrant</sub>
+    </td>
+  </tr>
+</table>
 
-**Languages** &nbsp; `Python` &nbsp;·&nbsp; `TypeScript` &nbsp;·&nbsp; `Java` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `R` &nbsp;·&nbsp; `C/C++`
+나머지 프로젝트는 [포트폴리오 사이트](https://parksungyun0411.github.io/projects/)에서 볼 수 있습니다.
 
-**AI / ML** &nbsp; `PyTorch` &nbsp;·&nbsp; `HuggingFace` &nbsp;·&nbsp; `KR-BERT·KoELECTRA` &nbsp;·&nbsp; `LangChain` &nbsp;·&nbsp; `LangGraph` &nbsp;·&nbsp; `Graph-RAG / RAG` &nbsp;·&nbsp; `GPT-4o API`
+## 💼 경력
 
-**Backend** &nbsp; `FastAPI` &nbsp;·&nbsp; `Node.js·Express` &nbsp;·&nbsp; `MongoDB` &nbsp;·&nbsp; `Neo4j` &nbsp;·&nbsp; `SSE·WebSocket`
+### 데이콘
 
-**Infra / DevOps** &nbsp; `AWS (EC2)` &nbsp;·&nbsp; `Azure` &nbsp;·&nbsp; `Docker` &nbsp;·&nbsp; `GitHub Actions`
+**운영·개발 파트 · 서비스 기획 · 풀스택 개발 · QA** · `2026.04 – 현재`
 
----
+AI 해커톤 플랫폼의 평가 시스템을 기획부터 개발 환경 배포까지 맡고, 플랫폼 전반의 주간 QA와 경진대회 현장 운영을 함께 합니다.
 
-## 💼 Experience
+#### ▎개발
 
-**데이콘 · 운영·개발 파트** — 기획 / QA (2026.04 ~ 재직중)
-- 해커톤 평가 시스템(ELO·평가설정 시퀀스)을 기획·설계부터 구현·배포까지 수행 — 정보구조 재설계로 1:N 다차수 평가 지원, DB 스키마 불변·회귀 없이 테스트 31/31 통과 후 배포
-- 역할별 ELO 정규화 룰을 설계해 62팀 규모 월간 해커톤에 적용
-- 플랫폼 주간 QA로 출시 전 버그 80여 건 발견·수정, 블라인드 평가 개인정보 유출 경로 사전 차단, 반복 QA 셋업을 시드 커맨드로 자동화
+| 프로젝트 | 기간 | 발주·주관 | 내용 |
+| --- | --- | --- | --- |
+| **교통사고 위험 예측 AI 플랫폼 개발·배포** | 2026.04&nbsp;–&nbsp;2026.09 | NIA 정책 수립 지원 데이터 분석 사업 (공공기관 주관) | 경진대회 모델 앙상블 탑재, 엑셀 전 시트 적재·업로드 추적 구조, 망분리 PC용 오프라인 설치본·멱등 설치 스크립트·롤백 절차로 발주기관 운영 환경 배포 |
+| **해커톤 평가 설정 재설계** | 2026.04&nbsp;– | 자사 플랫폼 | 평가일정·평가설정·공개설정 분리, 제출 단계와 평가 단계 연결로 다차수 평가 지원. 회귀 테스트 31건 통과 후 개발 환경 배포 |
+| **ELO 대중평가 설계·감사·신뢰도 검증** | 2026.05&nbsp;–&nbsp;2026.08 | 자사 플랫폼 | 채널별 정규화 룰, 결함 감사(테스트 141개), 자사 수식 그대로 쓴 시뮬레이션으로 순위 신뢰 기준(총 3,000매치) 산출, 호혜 게이트 구현 |
 
-**AI 백엔드 개발** · 너드수학(NerdMath) — 한이음 드림업 (2025, NDA)
-FastAPI + LangChain / LangGraph 기반 **Graph-RAG 학습 경로 추천 엔진**과 3모드 RAG 챗봇을 각 완성도 90%까지 구축(추론 응답 <50ms), Mathpix OCR 문항 파이프라인 설계.
+#### ▎QA · 운영
 
-**클라우드·엔터프라이즈 서비스 운영 인턴** · 자빅스 (2025 여름)
-AWS(EC2 운영·과금)·Azure AD·Microsoft 365 운영 지원, 공공 메신저 **'온톡'**(사용자 15만, 일 800만 건) 기능 기획 참여.
+플랫폼 주간 QA(최소 86회차)와 QA 준비 자동화, 대학 연합 경진대회 본선 현장 운영, 공공기관 경진대회 온라인 설명회 발표를 맡습니다.
 
----
+### 자빅스
 
-## 📜 Credentials
+**클라우드·엔터프라이즈 서비스 운영팀 (인턴)** · `2025.05 – 2025.08`
 
-`정보처리기사` · `빅데이터분석기사` · `SQLD` · `ADsP` · `컴활 1급` · `한국사 1급`
-**TOEIC** 885 (2024.08) · **TOEIC Speaking** IM3 (2026.03)
+| 프로젝트 | 내용 |
+| --- | --- |
+| **클라우드 인프라 운영 · 과금 산정** | 고객사 AWS EC2 생성·확장 요청 대응, CPU·메모리·디스크 사용량 분석으로 과금 산정 후 어드민·재무 담당자 전달 |
+| **공공 메신저 기능 기획** | 사용자 약 15만 명 규모 공공 메신저의 조직도 기반 사용자 조회·대화방 기능 기획 참여 |
 
----
+## 🛠 기술 스택
 
-## 📫 Links
+| 영역 | 기술 |
+| --- | --- |
+| LLM · Agent | ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C) ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?logo=openai&logoColor=white) ![Neo4j](https://img.shields.io/badge/Neo4j-018BFF?logo=neo4j&logoColor=white) |
+| ML · 데이터 | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white) ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?logo=huggingface&logoColor=black) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white) ![LightGBM](https://img.shields.io/badge/LightGBM-2C5F2D) ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1) |
+| 서빙 · 인프라 | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white) ![AWS](https://img.shields.io/badge/AWS_EC2-FF9900?logo=amazonwebservices&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) |
+| 웹 · 테스트 | ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white) |
 
-- 🌐 Portfolio: [parksungyun0411.github.io](https://parksungyun0411.github.io) — 더 자세한 프로젝트·경력 정리
-- ✍️ Velog: [@parksungyun0411](https://velog.io/@parksungyun0411)
-- 📧 Email: psyreo93@gmail.com · psyreo@naver.com
+## 🧪 개인 프로젝트 (2026.10 · 공개 데이터)
+
+데이콘에서 일하며 생긴 질문에서 주제를 골랐습니다. 회사의 코드와 데이터는 쓰지 않았고, 수치는 각 저장소 `reports/`의 리포트에서 옮긴 값이며 실행하지 않은 항목은 "측정 전"으로 적었습니다.
+
+| 저장소 | 질문 | 핵심 수치 |
+| --- | --- | --- |
+| [rag-eval-harness](https://github.com/parksungyun0411/rag-eval-harness) | 리더보드 순위를 몇 문항부터 믿을 수 있는가 | 시스템 23개 × 질문 300개 · 1위 유지 0.744 · 1–2위 McNemar p 0.6072 |
+| [airgap-egress-audit](https://github.com/parksungyun0411/airgap-egress-audit) | 폐쇄망에 반입한 LLM·RAG 스택이 밖으로 무엇을 보내려 하는가 | 게이트 6건 → 0건 (로컬 kind 클러스터) |
+| [k-mcp-qa](https://github.com/parksungyun0411/k-mcp-qa) | 공공데이터 MCP 서버 10개를 같은 시험으로 돌리면 무엇이 보이는가 | 서버 10개(+변형 1) · 분류 20종 중 11종 관찰 |
+| [ko-judge-lora](https://github.com/parksungyun0411/ko-judge-lora) | 사람 점수로 학습한 소형 평가자가 사람과 얼마나 맞는가 (진행 중) | 응답 2,506건 · 사람 간 피어슨 r 0.640 · 학습·서빙 측정 전 |
+
+## 📚 학부 프로젝트
+
+| 기간 | 과목 | 프로젝트 |
+| --- | :---: | --- |
+| 2025.09 – 2025.12 | 졸업 프로젝트 | [제주어 다중감정분류 · 도메인 특화 BERT 최적화](https://github.com/parksungyun0411/jeju-emotion-analysis) — 4인 팀, 데이터·모델·실험·분석 담당 |
+| 2024.03 – 2024.05 | 네트워크 프로그래밍 | [라이어 게임 · Java 소켓 멀티플레이어](https://github.com/parksungyun0411/liar-game) — 3인 팀, 서버 멀티스레드·게임 로직 담당 |
+| 2020 – 2025 | 전 학기 | [학부 과제 코드 모음](https://github.com/parksungyun0411/university-coursework) — 자료구조·알고리즘·DB 내부 구조·시스템 프로그래밍·통계전산·회귀·비모수·다변량 |
+
+## 🎓 학력
+
+| 기간 | 학교 | 전공 | 학위 |
+| --- | --- | --- | :---: |
+| 2020.03 – 2026.02 | 건국대학교 | 스마트ICT융합공학과 (주전공) · 응용통계학과 (복수전공) · 평점 4.10 / 4.5 | 학사 졸업 |
+
+## 📜 자격증 · 어학
+
+| 자격증 | 발급 기관 | 취득일 |
+| --- | --- | --- |
+| **정보처리기사** | 한국산업인력공단 | 2025.12 |
+| **빅데이터분석기사** | 한국데이터산업진흥원 | 2025.12 |
+| **데이터분석 준전문가 (ADsP)** | 한국데이터산업진흥원 | 2025.06 |
+| **SQL 개발자 (SQLD)** | 한국데이터산업진흥원 | 2024.09 |
+| **컴퓨터활용능력 1급** | 대한상공회의소 | 2024.04 |
+| **한국사능력검정시험 1급** | 국사편찬위원회 | 2023.08 |
+
+| 시험 | 등급·점수 | 응시일 |
+| --- | --- | --- |
+| TOEIC Speaking Test | **Intermediate Mid 3 (130점)** | 2026.03 |
+| TOEIC | **885점** | 2024.08 |
+
+## 🌱 활동
+
+| 기간 | 기관 | 프로그램 | 역할 |
+| --- | --- | --- | :---: |
+| 2025.04 – 2025.11 | 정보통신기획평가원 ICT 멘토링 | 한이음 드림업 · 너드수학 AI 수학 학습 플랫폼 (4인 팀) | AI 백엔드 개발 |
+| 2019.12 – 2026.04 | 갈매 시그마 수학학원 | 초등 ~ 고3 수학 지도 (군 복무 기간 제외) | 강사 |
