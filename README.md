@@ -95,7 +95,7 @@ AI 해커톤 플랫폼의 평가 시스템을 기획부터 개발 환경 배포�
 
 ## 🧪 개인 프로젝트 (2026.10 · 공개 데이터)
 
-데이콘에서 일하며 생긴 질문에서 주제를 골랐습니다. 회사의 코드와 데이터는 쓰지 않았고, 수치는 각 저장소 `reports/`의 리포트에서 옮긴 값이며 실행하지 않은 항목은 "측정 전"으로 적었습니다.
+데이콘에서 일하며 생긴 질문과, 지원하는 직무 공고가 요구하는 기술(RAG, 평가, 에이전트·MCP, 파인튜닝·서빙, 쿠버네티스, 폐쇄망)마다 하나씩 주제를 골랐습니다. 회사의 코드와 데이터는 쓰지 않았고, 수치는 각 저장소 `reports/`의 리포트에서 옮긴 값입니다. 코드와 테스트는 있지만 아직 실행하지 않은 저장소는 "진행 중"으로 표시하고 결과 칸에 "측정 전"이라고 적었습니다.
 
 | 저장소 | 질문 | 핵심 수치 |
 | --- | --- | --- |
@@ -103,6 +103,10 @@ AI 해커톤 플랫폼의 평가 시스템을 기획부터 개발 환경 배포�
 | [airgap-egress-audit](https://github.com/parksungyun0411/airgap-egress-audit) | 폐쇄망에 반입한 LLM·RAG 스택이 밖으로 무엇을 보내려 하는가 | 게이트 6건 → 0건 (로컬 kind 클러스터) |
 | [k-mcp-qa](https://github.com/parksungyun0411/k-mcp-qa) | 공공데이터 MCP 서버 10개를 같은 시험으로 돌리면 무엇이 보이는가 | 서버 10개(+변형 1) · 분류 20종 중 11종 관찰 |
 | [ko-judge-lora](https://github.com/parksungyun0411/ko-judge-lora) | 사람 점수로 학습한 소형 평가자가 사람과 얼마나 맞는가 (진행 중) | 응답 2,506건 · 사람 간 피어슨 r 0.640 · 학습·서빙 측정 전 |
+| [minwon-rag](https://github.com/parksungyun0411/minwon-rag) | 시민이 실제로 쓴 민원 질의에서 dense, 하이브리드, 리랭커 검색은 얼마나 다른가 (진행 중) | 측정 전 · 수집기, 시점 분할, 인용 법령 라벨, 검색 설정 7종 구현 |
+| [vendor-check-agent](https://github.com/parksungyun0411/vendor-check-agent) | 공공 API가 실패할 때 에이전트는 고정 파이프라인보다 얼마나 더 복구하고 얼마나 조용히 틀리는가 (진행 중) | 측정 전 · MCP 서버, 실패 주입 프록시 6유형, 복구 전략 4종, LangGraph 에이전트 구현 |
+| [jeju-emotion-lora](https://github.com/parksungyun0411/jeju-emotion-lora) | LoRA 소형 LLM이 인코더 앙상블을 같은 분할에서 따라잡는가, 양자화 뒤 건당 비용은 얼마인가 (진행 중) | 측정 전 · 분할 재현 검증, 사람 검수 도구, LoRA → AWQ → vLLM 파이프라인 구현 |
+| [cpu-sllm-k8s](https://github.com/parksungyun0411/cpu-sllm-k8s) | GPU 없는 노드에서 CPU limit, 스레드 수, HPA가 소형 LLM 처리량을 얼마나 바꾸는가 (진행 중) | 측정 전 · 모델 내장 이미지, Helm 차트, EKS 배포 파이프라인, k6 부하, 수집기 구현 |
 
 ## 📚 학부 프로젝트
 
