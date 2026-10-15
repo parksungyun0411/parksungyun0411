@@ -28,10 +28,10 @@
       <sub>FastAPI · LightGBM · SHAP · React · eGovFrame · Nginx</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://parksungyun0411.github.io/projects/rag-eval-harness/"><img src="assets/rag-eval-harness-demo.png" alt="RAG 리더보드 순위 안정성 데모 화면(로컬 실행)"></a>
-      <h3><a href="https://parksungyun0411.github.io/projects/rag-eval-harness/">RAG 리더보드 순위 안정성</a></h3>
+      <a href="https://github.com/parksungyun0411/rag-eval-harness"><img src="assets/rag-eval-harness-demo.png" alt="RAG 리더보드 순위 안정성 데모 화면(로컬 실행)"></a>
+      <h3><a href="https://github.com/parksungyun0411/rag-eval-harness">RAG 리더보드 순위 안정성</a></h3>
       공개 한국어 RAG 리더보드의 순위가 질문 수에 따라 얼마나 흔들리는지 부트스트랩 10,000회로 재고, 시뮬레이션을 정확해로 검증했습니다.<br>300문항으로는 1위와 2위를 가를 수 없다는 결과를 얻었고, 역전 확률·필요 질문 수를 계산하는 계산기를 만들었습니다.<br><br>
-      <a href="https://parksungyun0411.github.io/projects/rag-eval-harness/"><b>프로젝트 상세</b></a> · <a href="https://parksungyun0411.github.io/notes/rag-leaderboard-rank-stability/">기술 노트</a> · 저장소 비공개(요청 시 공유)<br>
+      <a href="https://github.com/parksungyun0411/rag-eval-harness"><b>저장소</b></a> · <a href="https://parksungyun0411.github.io/projects/rag-eval-harness/">프로젝트 상세</a> · <a href="https://parksungyun0411.github.io/notes/rag-leaderboard-rank-stability/">기술 노트</a><br>
       <sub>Python · NumPy · SciPy · FastAPI · pytest</sub>
     </td>
   </tr>
@@ -44,10 +44,10 @@
       <sub>PyTorch · HuggingFace · KR-BERT · KoELECTRA</sub>
     </td>
     <td width="50%" valign="top">
-      <a href="https://parksungyun0411.github.io/projects/airgap-egress-audit/"><img src="assets/airgap-egress-audit-arch.png" alt="폐쇄망 외부 호출 감사 구성"></a>
-      <h3><a href="https://parksungyun0411.github.io/projects/airgap-egress-audit/">폐쇄망 반입 후 외부 호출 감사</a></h3>
+      <a href="https://github.com/parksungyun0411/airgap-egress-audit"><img src="assets/airgap-egress-audit-arch.png" alt="폐쇄망 외부 호출 감사 구성"></a>
+      <h3><a href="https://github.com/parksungyun0411/airgap-egress-audit">폐쇄망 반입 후 외부 호출 감사</a></h3>
       egress를 막은 쿠버네티스 네임스페이스에 한국어 소형 LLM과 RAG 스택을 설치하고, 설치·기동·첫 요청·유휴 단계의 외부 호출 시도를 패킷으로 기록했습니다.<br>허용 목록 밖 호출이 있으면 실패하는 회귀 게이트를 만들어, 완화 전 6개 항목이 완화 설정 뒤 0건이 되는 것을 확인했습니다(push CI는 커밋한 감사 기록을 다시 검사).<br><br>
-      <a href="https://parksungyun0411.github.io/projects/airgap-egress-audit/"><b>프로젝트 상세</b></a> · 저장소 비공개(요청 시 공유)<br>
+      <a href="https://github.com/parksungyun0411/airgap-egress-audit"><b>저장소</b></a> · <a href="https://parksungyun0411.github.io/projects/airgap-egress-audit/">프로젝트 상세</a><br>
       <sub>Kubernetes (kind) · NetworkPolicy · tcpdump · llama.cpp · Qdrant</sub>
     </td>
   </tr>
@@ -95,7 +95,7 @@ AI 해커톤 플랫폼의 평가 기능을 기획서부터 구현까지 맡아 �
 
 ## 🧪 개인 프로젝트 (2026.10 · 공개 데이터)
 
-데이콘에서 일하며 생긴 질문과, 지원하는 직무 공고가 요구하는 기술(RAG, 평가, 에이전트·MCP, 파인튜닝·서빙, 쿠버네티스, 폐쇄망)마다 하나씩 주제를 골랐습니다. 회사의 코드와 데이터는 쓰지 않았습니다. 측정 수치는 각 저장소 `reports/`의 리포트에서, 설계 수치(설정 수·시나리오 수 등)는 각 저장소 README와 코드에서 옮겼습니다. 코드와 테스트는 있지만 아직 실행하지 않은 저장소는 "진행 중"으로 표시하고 결과 칸에 "측정 전"이라고 적었습니다. 저장소는 지금 비공개이며, 요청하시면 공유합니다.
+데이콘에서 일하며 생긴 질문과, 지원하는 직무 공고가 요구하는 기술(RAG, 평가, 에이전트·MCP, 파인튜닝·서빙, 쿠버네티스, 폐쇄망)마다 하나씩 주제를 골랐습니다. 회사의 코드와 데이터는 쓰지 않았습니다. 측정 수치는 각 저장소 `reports/`의 리포트에서, 설계 수치(설정 수·시나리오 수 등)는 각 저장소 README와 코드에서 옮겼습니다. 코드와 테스트는 있지만 아직 실행하지 않은 저장소는 "진행 중"으로 표시하고 결과 칸에 "측정 전"이라고 적었습니다.
 
 | 저장소 | 질문 | 핵심 수치 |
 | --- | --- | --- |
