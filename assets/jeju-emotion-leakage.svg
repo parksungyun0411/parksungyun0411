@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="제주어 감정 분류 재검증: test 문장의 70%가 train에도 있음">
+  <defs>
+    <linearGradient id="jeju-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffedd5"/>
+      <stop offset="1" stop-color="#fef3c7"/>
+    </linearGradient>
+    <clipPath id="jeju-train">
+      <circle cx="92" cy="90" r="60"/>
+    </clipPath>
+  </defs>
+  <rect width="320" height="200" rx="14" fill="url(#jeju-bg)"/>
+  <circle cx="92" cy="90" r="60" fill="#ffffff" stroke="#c2410c" stroke-width="2.5"/>
+  <circle cx="136" cy="90" r="38" fill="#ffffff" stroke="#c2410c" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <circle cx="136" cy="90" r="38" fill="#ea580c" opacity="0.85" clip-path="url(#jeju-train)"/>
+  <text x="62" y="94" font-family="ui-monospace, monospace" font-size="13" fill="#9a3412" text-anchor="middle">train</text>
+  <text x="164" y="46" font-family="ui-monospace, monospace" font-size="13" fill="#9a3412" text-anchor="middle">test</text>
+  <text x="248" y="86" font-family="ui-sans-serif, system-ui, sans-serif" font-size="30" font-weight="700" fill="#c2410c" text-anchor="middle">70%</text>
+  <text x="248" y="108" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#9a3412" text-anchor="middle">test 문장 중</text>
+  <text x="248" y="123" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#9a3412" text-anchor="middle">train에도 있는 비율</text>
+  <text x="32" y="180" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#9a3412" opacity="0.8">행 단위 분할을 다시 검증, 문장 단위로 재평가 중</text>
+</svg>
