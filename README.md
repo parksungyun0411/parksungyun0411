@@ -39,7 +39,7 @@
     <td width="50%" valign="top">
       <a href="https://github.com/parksungyun0411/jeju-emotion-analysis"><img src="assets/jeju-emotion-leakage.svg" alt="재검증 결과: test 문장의 70%가 train에도 있음"></a>
       <h3><a href="https://github.com/parksungyun0411/jeju-emotion-analysis">제주어 다중감정분류 · 결과 재검증</a></h3>
-      4인 팀 졸업 프로젝트에서 기술 파트를 맡아 감정 라벨이 없는 제주어 문장에 GPT-4o 라벨링을 자동화하고 KR-BERT·KoELECTRA 인코더 앙상블을 만들었습니다.<br>졸업 후 결과를 다시 검증해 test 문장의 70%가 train에도 들어 있는 분할 누수와 코드 속 감정 이름 두 개가 뒤바뀐 것을 찾았습니다. 지금은 문장 단위로 다시 나눈 분할에서 재평가하고 있습니다(재평가 결과 측정 전).<br><br>
+      4인 팀 졸업 프로젝트에서 기술 파트를 맡아 감정 라벨이 없는 제주어 문장에 GPT-4o 라벨링을 자동화하고 KR-BERT·KoELECTRA 인코더 앙상블을 만들었습니다.<br>졸업 후 결과를 다시 검증해 test 문장의 70%가 train에도 들어 있는 분할 누수와 코드 속 감정 이름 두 개가 뒤바뀐 것을 찾았습니다. 문장 단위로 다시 나눈 분할에서 재평가하니 앙상블 macro-F1이 0.84에서 0.52로 내려갔습니다.<br><br>
       <a href="https://github.com/parksungyun0411/jeju-emotion-analysis"><b>저장소</b></a> · <a href="https://parksungyun0411.github.io/notes/jeju-emotion-stepwise/">기술 노트</a><br>
       <sub>PyTorch · HuggingFace · KR-BERT · KoELECTRA</sub>
     </td>
@@ -105,14 +105,14 @@ AI 해커톤 플랫폼의 평가 기능을 기획서부터 구현까지 맡아 �
 | [ko-judge-lora](https://github.com/parksungyun0411/ko-judge-lora) | 사람 점수로 학습한 소형 평가자가 사람과 얼마나 맞는가 (진행 중) | 응답 2,506건 · 주석자 간 피어슨 r 0.640(참고선) · 학습·서빙 측정 전 |
 | [minwon-rag](https://github.com/parksungyun0411/minwon-rag) | 시민이 실제로 쓴 민원 질의에서 dense, 하이브리드, 리랭커 검색은 얼마나 다른가 (진행 중) | 측정 전 · 수집기, 시점 분할, 인용 법령 라벨, 검색 설정 7종 구현 |
 | [vendor-check-agent](https://github.com/parksungyun0411/vendor-check-agent) | 공공 API가 실패할 때 에이전트는 고정 파이프라인보다 얼마나 더 복구하고 얼마나 조용히 틀리는가 (진행 중) | 측정 전 · MCP 서버, 실패 주입 프록시 6유형, 복구 전략 4종, LangGraph 에이전트 구현 |
-| [jeju-emotion-lora](https://github.com/parksungyun0411/jeju-emotion-lora) | LoRA 소형 LLM이 인코더 앙상블을 문장 단위로 다시 나눈 분할에서 따라잡는가, 양자화 뒤 건당 비용은 얼마인가 (진행 중) | Colab T4 실행 중 · 원 분할 누수 진단, 문장 단위 분할, 블라인드 재라벨 도구, LoRA → AWQ → vLLM 파이프라인 구현 |
+| [jeju-emotion-lora](https://github.com/parksungyun0411/jeju-emotion-lora) | LoRA 소형 LLM이 인코더 앙상블을 문장 단위로 다시 나눈 분할에서 따라잡는가, 양자화 뒤 건당 비용은 얼마인가 | 측정 완료(T4) · 가장 높은 LoRA도 앙상블과 macro-F1 차이가 95% 구간 안(0.530 대 0.519) · 처리량은 앙상블이 8.4배 |
 | [cpu-sllm-k8s](https://github.com/parksungyun0411/cpu-sllm-k8s) | GPU 없는 노드에서 CPU limit, 스레드 수, HPA가 소형 LLM 처리량을 얼마나 바꾸는가 | 측정 완료(로컬 kind) · CPU limit 1에서 스레드가 한도를 넘으면 처리량 하락(스레드 1→8: 28.16 → 7.10 tokens/s) · EKS(ECR·eksctl·OIDC) 배포 예정 |
 
 ## 📚 학부 프로젝트
 
 | 기간 | 과목 | 프로젝트 |
 | --- | :---: | --- |
-| 2025.09 – 2025.12 | 졸업 프로젝트 | [제주어 다중감정분류 · 라벨링 자동화부터 누수 재검증까지](https://github.com/parksungyun0411/jeju-emotion-analysis): 4인 팀, 기술 파트(라벨링 자동화·모델 실험) 담당. 졸업 후 재검증으로 분할 누수를 찾아 문장 단위로 재평가 중 |
+| 2025.09 – 2025.12 | 졸업 프로젝트 | [제주어 다중감정분류 · 라벨링 자동화부터 누수 재검증까지](https://github.com/parksungyun0411/jeju-emotion-analysis): 4인 팀, 기술 파트(라벨링 자동화·모델 실험) 담당. 졸업 후 재검증으로 분할 누수를 찾아 문장 단위로 재평가(앙상블 macro-F1 0.84 → 0.52) |
 | 2024.03 – 2024.05 | 네트워크 프로그래밍 | [라이어 게임 · Java 소켓 멀티플레이어](https://github.com/parksungyun0411/liar-game): 3인 팀, 서버 멀티스레드·게임 로직 담당 |
 | 2020 – 2025 | 전 학기 | [학부 과제 코드 모음](https://github.com/parksungyun0411/university-coursework): 자료구조·알고리즘·DB 내부 구조·시스템 프로그래밍·통계전산·회귀·비모수·다변량 |
 
