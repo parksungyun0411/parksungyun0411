@@ -105,7 +105,7 @@ AI 해커톤 플랫폼의 평가 기능을 기획서부터 구현까지 맡아 �
 | [ko-judge-lora](https://github.com/parksungyun0411/ko-judge-lora) | 사람 점수로 학습한 소형 평가자가 사람과 얼마나 맞는가, 4bit로 줄이면 무엇이 달라지는가 | 측정 완료(T4) · 평가자와 1점 이내 일치 0.874~0.885(평가자 간 0.838) · 31개 모델 순위 τ 0.874 · AWQ는 순위를 지키고 점수를 낮게 줌 |
 | [minwon-rag](https://github.com/parksungyun0411/minwon-rag) | 시민이 실제로 쓴 민원 질의에서 dense, 하이브리드, 리랭커 검색은 얼마나 다른가 (진행 중) | 측정 전 · 수집기, 시점 분할, 인용 법령 라벨, 검색 설정 7종 구현 |
 | [vendor-check-agent](https://github.com/parksungyun0411/vendor-check-agent) | 공공 API가 실패할 때 에이전트는 고정 파이프라인보다 얼마나 더 복구하고 얼마나 조용히 틀리는가 (진행 중) | 측정 전 · MCP 서버, 실패 주입 프록시 6유형, 복구 전략 4종, LangGraph 에이전트 구현 |
-| [jeju-emotion-lora](https://github.com/parksungyun0411/jeju-emotion-lora) | LoRA 소형 LLM이 인코더 앙상블을 문장 단위로 다시 나눈 분할에서 따라잡는가, 양자화 뒤 건당 비용은 얼마인가 | 측정 완료(T4) · 가장 높은 LoRA도 앙상블과 macro-F1 차이가 95% 구간 안(0.530 대 0.519) · 처리량은 앙상블이 8.4배 |
+| [jeju-emotion-lora](https://github.com/parksungyun0411/jeju-emotion-lora) | LoRA 소형 LLM이 인코더 앙상블을 문장 단위로 다시 나눈 분할에서 따라잡는가, 양자화 뒤 건당 비용은 얼마인가 | 측정 완료(T4) · 가장 높은 LoRA와 앙상블의 macro-F1 차이(0.530 대 0.519)는 95% 구간이 0을 포함 · 처리량은 앙상블이 8.4배 |
 | [cpu-sllm-k8s](https://github.com/parksungyun0411/cpu-sllm-k8s) | GPU 없는 노드에서 CPU limit, 스레드 수, HPA가 소형 LLM 처리량을 얼마나 바꾸는가 | 측정 완료(로컬 kind) · CPU limit 1에서 스레드가 한도를 넘으면 처리량 하락(스레드 1→8: 28.16 → 7.10 tokens/s) · EKS(ECR·eksctl·OIDC) 배포 예정 |
 
 ## 📚 학부 프로젝트
